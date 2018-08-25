@@ -1,0 +1,160 @@
+<!doctype html>
+<html >
+ <head>
+  <title></title>
+ </head>
+ <body>
+	<script>
+		<!-- js的语句的写法 -->
+		/*val = 5;
+		if(val > 4){
+			alert(val + " > 4");
+		}else{
+			alert(val + " < 4");
+		}*/
+
+
+		<!-- switch 语句支持 js的所有变量 number string -->
+		/*var b = 6;
+		switch(b){
+			case 3:
+				alert("3");
+				break;
+
+			case 6:
+				alert("6");
+				break;
+
+			default:
+				break;
+		}*/
+
+		<!-- js的运算符 -->
+		<!-- 由于js不区分 int double float 这样的数据类型 -->
+		<!-- 所以在运算的时候 不考虑舍弃的情况 -->
+		<!-- 例子如下 ,请对比这种运算在java中的过程，来理解js与java的不同-->
+		
+		/*var temp = 123;
+		var b = temp / 1000 * 1000; <!-- temp / 1000 ==> 0.123 -->
+		alert(b);*/
+
+		//js 字符串的加减
+		/*var str = "123";
+		alert(str + 1);  // 1231
+		alert(str - 1);  // 122 */
+
+		//如果一个字符串不是 数字格式的呢 
+		/*var str = "abc"; 
+		alert(str + 1);  
+		alert(str - 1);*/  //NaN :表示str不是一个数字
+
+
+		//boolean 类型的加减
+		/*var flag = true;
+		alert(flag + 1);	//2
+		
+		var flag1 = false;
+		alert(flag1 + 1);	//1*/
+
+		// == 与 === 的区别
+		// == 比较的只是值
+		// === 比较的是值 和 类型 
+		
+		//document.write();
+		/*document.write("aaaaaa");
+		document.write("<hr/> ");*/
+
+		//九九乘法表 
+		/*
+		document.write("<table border='1' bordercolor='blue'>");
+		for (var i = 1 ; i <= 9 ; i++ ){
+			document.write("<tr>");
+		  	for (var j = 1 ; j <= i ; j++ ){
+				document.write("<td>");
+				document.write(j + "*" + i + "=" + i * j + "&nbsp;" );
+				document.write("</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+		*/
+
+
+
+		/*数组的定义方式*/
+
+		/*
+		//1.
+		var arr1 = [1,"abc",true];
+		alert(arr1);
+
+		//2
+		var arr2 = new Array(3,"abc",false);
+		alert(arr2);
+
+		//3
+		var arr3 = new Array(3);
+		arr3[0] = 1;
+		arr3[1] = "abc";
+		arr3[2] = true;
+		alert(arr3);
+		*/
+
+		/*获取数组的长度*/
+		/*
+		alert(arr1.length);
+		*/
+
+
+		/*js的函数*/
+		//1.
+		/*
+		function test(){
+			alert("1");
+		}
+		test();
+		*/
+
+		//2.
+		/*
+		function test1(a,b){
+			alert(a + b);
+		}
+		test1(2,3);
+		*/
+
+		//3
+		/*
+		function test2(a,b,c){
+			return a + b + c;
+		}
+		var result = test2(3,4,5);
+		alert(result);
+		*/
+
+		// 匿名函数
+		/*
+		var anonymous = function (a,b){
+			document.write( "anonymous:" + a + b);
+		}
+		anonymous(5,5);
+		*/
+
+		// 使用Funcition 
+
+		/*
+		var param = "x,y";
+		var functionBody = "return x + y";
+		var fun = new Function(param,functionBody);
+		alert(fun(4,10));
+		*/
+
+		//js的全局变量 和 局部变量
+		// ** 在方法的内部外部都可以使用，在另一个script 标签中也可以使用 ，
+
+		//script 标签位置
+		//建议把script标签放到 body标签的后面，
+
+	</script>
+ </body>
+</html>
